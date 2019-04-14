@@ -1,7 +1,7 @@
 local BurnerAssemblingMachine = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])
 
 BurnerAssemblingMachine.name = "burner-assembling-machine"
-BurnerAssemblingMachine.order = "a[burner-assembling-machine]"
+BurnerAssemblingMachine.order = "c[assembling-machine-0]"
 BurnerAssemblingMachine.minable = {mining_time = 0.2, result = "burner-assembling-machine"}
 BurnerAssemblingMachine.energy_source =
     {
@@ -9,7 +9,7 @@ BurnerAssemblingMachine.energy_source =
       fuel_category = "chemical",
       effectivity = 1,
       fuel_inventory_size = 1,
-      emissions_per_second_per_watt = 10 / 150000,
+      emissions_per_minute = 12,
       smoke =
       {
         {
