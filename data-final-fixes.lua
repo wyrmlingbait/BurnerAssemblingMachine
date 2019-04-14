@@ -1,1 +1,1 @@
-require("Prototypes.recipes-fixes")
+require("prototypes.recipes-fixes")
