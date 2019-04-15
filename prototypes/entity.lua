@@ -3,6 +3,7 @@ local BurnerAssemblingMachine = util.table.deepcopy(data.raw["assembling-machine
 BurnerAssemblingMachine.name = "burner-assembling-machine"
 BurnerAssemblingMachine.order = "c[assembling-machine-0]"
 BurnerAssemblingMachine.minable = {mining_time = 0.2, result = "burner-assembling-machine"}
+BurnerAssemblingMachine.next_upgrade = "assembling-machine-1"
 BurnerAssemblingMachine.energy_source =
     {
       type = "burner",
