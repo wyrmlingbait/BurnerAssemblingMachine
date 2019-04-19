@@ -1,4 +1,0 @@
-0.3.2 - added the handcrafting category when pyanodons hightech is present
-0.3.1 - changed emissions_per_second_per_watt to emissions_per_minute in entity.lua
-              changed recipes to not include those with ingredients the assembling machine can't craft
-0.3.0 - Initial Release
