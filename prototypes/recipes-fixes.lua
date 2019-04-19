@@ -17,6 +17,9 @@ local wyrm_categories = {
   local ban_ingredients = {}
   local ban_recipes = {}
   
+  
+  -- remove recipes that we can craft  the ingredients
+  
   if mods["bobelectronics"] then
     ban_ingredients["electronic-circuit"] = true
   end
@@ -30,6 +33,12 @@ local wyrm_categories = {
   if mods["angelsrefining"] then
    ban_recipes["clarifier"] = true
   end   
+  
+  -- we need to be able to craft an extra recipe from pyhightech in order to be no handcrafting
+  
+  if mods["pyhightech"] then
+    table.insert(data.raw["assembling-machine"]["burner-assembling-machine"].crafting_categories, "handcrafting")
+  end
   
   function check_ingredients(ban_i, name)
   local recipe = data.raw["recipe"][name]
