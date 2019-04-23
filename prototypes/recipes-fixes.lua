@@ -18,7 +18,7 @@ local wyrm_categories = {
   local ban_recipes = {}
   
   
-  -- remove recipes that we can craft  the ingredients
+  -- remove recipes that we can't craft  the ingredients
   
   if mods["bobelectronics"] then
     ban_ingredients["electronic-circuit"] = true
@@ -29,6 +29,8 @@ local wyrm_categories = {
   end
   if mods["bobplates"] then
     ban_ingredients["glass"] = true
+	ban_ingredients["steel-gear-wheel"] = true
+	ban_ingredients["steel-plate"] = true
   end
   if mods["angelsrefining"] then
    ban_recipes["clarifier"] = true

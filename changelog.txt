@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+  Changes:
+    - removed recipes using steel intermediates when bobplates is present after recent changes
+---------------------------------------------------------------------------------------------------
 Version: 0.3.3
   Changes:
     - fixed changelog.txt format
