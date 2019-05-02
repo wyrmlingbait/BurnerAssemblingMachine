@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.5
+  Changes:
+    - changed data.raw reference to 0.17.35 reference
+---------------------------------------------------------------------------------------------------
 Version: 0.3.4
   Changes:
     - removed recipes using steel intermediates when bobplates is present after recent changes

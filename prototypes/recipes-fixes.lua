@@ -202,7 +202,7 @@ end
 
 -- add new categories to all types of players
 
-for v,k in pairs(data.raw["player"]) do
+for v,k in pairs(data.raw["character"]) do
    for n,p in pairs(wyrm_categories) do
      for _,j in pairs(k.crafting_categories) do
 	   if j == n then
